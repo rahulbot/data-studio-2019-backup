@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://datastudio2019.datatherapy.org/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://datastudio2019.datatherapy.org/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>How Much Food Is In Our Trash &#8211; 2019 Data Storytelling Studio @ MIT</title>
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="2019 Data Storytelling Studio @ MIT &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="2019 Data Storytelling Studio @ MIT &raquo; Comments Feed" href="comments/feed/index.html" />
+<link rel="alternate" type="text/calendar" title="2019 Data Storytelling Studio @ MIT &raquo; iCal Feed" href="events/index.html%3Fical=1" />
+    <script type="text/javascript">
+        var ajaxurl = 'https://datastudio2019.datatherapy.org/wp-admin/admin-ajax.php';
+    </script>
+    		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/datastudio2019.datatherapy.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='userlist-style-css'  href='wp-content/plugins/wp-users-list-widget/css/style.css%3Fver=5.3.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-common-skeleton-style-css'  href='wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css%3Fver=4.10.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-tooltip-css'  href='wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css%3Fver=4.10.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css%3Fver=5.3.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='wp-includes/css/dist/block-library/theme.min.css%3Fver=5.3.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-blog-designer-fontawesome-stylesheets-css'  href='wp-content/plugins/blog-designer/css/fontawesome-all.min.css%3Fver=5.3.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-blog-designer-css-stylesheets-css'  href='wp-content/plugins/blog-designer/css/designer_css.css%3Fver=5.3.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='collapseomatic-css-css'  href='wp-content/plugins/jquery-collapse-o-matic/light_style.css%3Fver=1.6.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='wp-content/themes/twentyfifteen/genericons/genericons.css%3Fver=3.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='wp-content/themes/twentyfifteen/style.css%3Fver=5.3.2.css' type='text/css' media='all' />
+<style id='twentyfifteen-style-inline-css' type='text/css'>
+
+		/* Custom Header Background Color */
+		body:before,
+		.site-header {
+			background-color: #7a416f;
+		}
+
+		@media screen and (min-width: 59.6875em) {
+			.site-header,
+			.secondary {
+				background-color: transparent;
+			}
+
+			.widget button,
+			.widget input[type="button"],
+			.widget input[type="reset"],
+			.widget input[type="submit"],
+			.widget_calendar tbody a,
+			.widget_calendar tbody a:hover,
+			.widget_calendar tbody a:focus {
+				color: #7a416f;
+			}
+		}
+	
+
+		/* Custom Sidebar Text Color */
+		.site-title a,
+		.site-description,
+		.secondary-toggle:before {
+			color: #ffffff;
+		}
+
+		.site-title a:hover,
+		.site-title a:focus {
+			color: #ffffff; /* Fallback for IE7 and IE8 */
+			color: rgba( 255, 255, 255, 0.7);
+		}
+
+		.secondary-toggle {
+			border-color: #ffffff; /* Fallback for IE7 and IE8 */
+			border-color: rgba( 255, 255, 255, 0.1);
+		}
+
+		.secondary-toggle:hover,
+		.secondary-toggle:focus {
+			border-color: #ffffff; /* Fallback for IE7 and IE8 */
+			border-color: rgba( 255, 255, 255, 0.3);
+		}
+
+		.site-title a {
+			outline-color: #ffffff; /* Fallback for IE7 and IE8 */
+			outline-color: rgba( 255, 255, 255, 0.3);
+		}
+
+		@media screen and (min-width: 59.6875em) {
+			.secondary a,
+			.dropdown-toggle:after,
+			.widget-title,
+			.widget blockquote cite,
+			.widget blockquote small {
+				color: #ffffff;
+			}
+
+			.widget button,
+			.widget input[type="button"],
+			.widget input[type="reset"],
+			.widget input[type="submit"],
+			.widget_calendar tbody a {
+				background-color: #ffffff;
+			}
+
+			.textwidget a {
+				border-color: #ffffff;
+			}
+
+			.secondary a:hover,
+			.secondary a:focus,
+			.main-navigation .menu-item-description,
+			.widget,
+			.widget blockquote,
+			.widget .wp-caption-text,
+			.widget .gallery-caption {
+				color: rgba( 255, 255, 255, 0.7);
+			}
+
+			.widget button:hover,
+			.widget button:focus,
+			.widget input[type="button"]:hover,
+			.widget input[type="button"]:focus,
+			.widget input[type="reset"]:hover,
+			.widget input[type="reset"]:focus,
+			.widget input[type="submit"]:hover,
+			.widget input[type="submit"]:focus,
+			.widget_calendar tbody a:hover,
+			.widget_calendar tbody a:focus {
+				background-color: rgba( 255, 255, 255, 0.7);
+			}
+
+			.widget blockquote {
+				border-color: rgba( 255, 255, 255, 0.7);
+			}
+
+			.main-navigation ul,
+			.main-navigation li,
+			.secondary-toggle,
+			.widget input,
+			.widget textarea,
+			.widget table,
+			.widget th,
+			.widget td,
+			.widget pre,
+			.widget li,
+			.widget_categories .children,
+			.widget_nav_menu .sub-menu,
+			.widget_pages .children,
+			.widget abbr[title] {
+				border-color: rgba( 255, 255, 255, 0.1);
+			}
+
+			.dropdown-toggle:hover,
+			.dropdown-toggle:focus,
+			.widget hr {
+				background-color: rgba( 255, 255, 255, 0.1);
+			}
+
+			.widget input:focus,
+			.widget textarea:focus {
+				border-color: rgba( 255, 255, 255, 0.3);
+			}
+
+			.sidebar a:focus,
+			.dropdown-toggle:focus {
+				outline-color: rgba( 255, 255, 255, 0.3);
+			}
+		}
+	
+</style>
+<link rel='stylesheet' id='twentyfifteen-block-style-css'  href='wp-content/themes/twentyfifteen/css/blocks.css%3Fver=20181230.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='https://datastudio2019.datatherapy.org/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='https://datastudio2019.datatherapy.org/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='dry_awp_theme_style-css'  href='wp-content/plugins/advanced-wp-columns/assets/css/awp-columns.css%3Fver=5.3.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tmm-css'  href='wp-content/plugins/team-members/inc/css/tmm_style.css%3Fver=5.3.2.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js%3Fver=1.12.4-wp'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<link rel='https://api.w.org/' href='wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Common causes of colony collapse for hobbyists' href='index.html%3Fp=209.html' />
+<link rel='next' title='Where is Your Water From?' href='index.html%3Fp=235.html' />
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel="canonical" href="index.html%3Fp=217.html" />
+<link rel='shortlink' href='index.html%3Fp=217.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fdatastudio2019.datatherapy.org%252F2019%252F03%252F08%252Fhow-much-food-is-in-our-trash%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fdatastudio2019.datatherapy.org%252F2019%252F03%252F08%252Fhow-much-food-is-in-our-trash%252F&amp;format=xml" />
+<style type="text/css" id="tve_global_variables">:root{}</style><script src='https://wordpress.brownbag.me/?dm=92dfdf7b65c23102d23f0f69d602eef7&amp;action=load&amp;blogid=31&amp;siteid=1&amp;t=1087492612&amp;back=https%3A%2F%2Fdatastudio2019.datatherapy.org%2F2019%2F03%2F08%2Fhow-much-food-is-in-our-trash%2F' type='text/javascript'></script><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://datastudio2019.datatherapy.org"><link rel="https://theeventscalendar.com/" href="wp-json/tribe/events/v1/index.html" /><!-- All in one Favicon 4.7 --><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #aab5b1; }
+</style>
+	
+<style type="text/css">
+
+	/**
+	 * Table of Contents
+	 *
+	 * 1.0 - Pagination
+	 * 2.0 - Social Media Icon
+	 * 3.0 - Default Blog Template
+	 * 4.0 - Classical Template
+	 * 5.0 - Light Breeze Template
+	 * 6.0 - Spektrum Template
+	 * 7.0 - Evolution Template
+	 * 8.0 - Timeline Template
+	 * 9.0 - News Template
+	 *
+	 */
+
+	/**
+	 * 1.0 - Pagination
+	 */
+
+	.bd_pagination_box.wl_pagination_box .paging-navigation ul.page-numbers li a.page-numbers:hover,
+	.bd_pagination_box.wl_pagination_box .paging-navigation ul.page-numbers li > span.current {
+		background-color: #2e93ea;		color: #cecece;		font-size:14px;	}
+
+	.bd_pagination_box.wl_pagination_box .paging-navigation ul.page-numbers li a.page-numbers {
+		background-color: #cecece;		color: #2e93ea;		font-size:14px;	}
+	.bd_pagination_box.wl_pagination_box .paging-navigation ul.page-numbers li a.page-numbers.dots {
+		font-size:14px !important;	}
+	/**
+	 * 2.0 - Social Media Icon
+	 */    
+
+	.bdp_blog_template .social-component a {
+		border-radius: 100%;	}
+
+	/**
+	 * 3.0 - Default Blog Template
+	 */    
+
+	.bdp_blog_template .bd-blog-header h2 {        
+		background: #ffffff	}
+	.blog_template .bd-more-tag-inline {
+		color: #cecece !important;		font-size:14px;	}
+
+			.bdp_blog_template .blog_header h2,
+		.bdp_blog_template .blog_header h2 a,
+		.bdp_blog_template .bd-blog-header h2,
+		.bdp_blog_template .bd-blog-header h2 a {
+			color: #222222 !important;			font-size: 35px;		}
+	
+	.bd-post-content {
+		color:#999999;		font-size:14px;	}
+	.bdp_blog_template .bd-metacats,
+	.bd-tags,
+	span.bd-category-link,
+	.bdp_blog_template .author,
+	.bdp_blog_template .date,
+	.bdp_blog_template .bd-categories,
+	.bdp_blog_template.evolution .bd-categories a,
+	.bdp_blog_template .bd-categories a,
+	.bd-meta-data-box .bd-metacats,
+	.bd-meta-data-box .bd-metacomments,
+	.bd-meta-data-box .bd-metacomments span,
+	.bdp_blog_template .date i, .bdp_blog_template .author i, .bdp_blog_template .comment i,
+	.bd-tags a,
+	span.bd-category-link a,
+	.bd-metadatabox p,
+	span .bd-link-label,
+	.bdp_blog_template .blog_footer span,
+	.bd-metacomments i,
+	.date_wrap i,
+	.bdp_blog_template a,
+	.bdp_blog_template .post_content,
+	.bd-categories i,
+	.bdp_blog_template.spektrum .post-bottom .post-by,
+	.bdp_blog_template.spektrum .post-bottom .bd-tags,
+	.bd-metadatabox,
+	.bdp_blog_template.news .bd-blog-header .bd-metadatabox a,
+	.bdp_blog_template.news .post-content-div .post_cat_tag > span i,
+	.bdp_blog_template .bd-meta-data-box .bd-metadate, .bdp_blog_template .bd-meta-data-box .bd-metauser, .bdp_blog_template .bd-meta-data-box .bd-metacats,
+	.bd-meta-data-box .bd-metacats a,
+	.bd-meta-data-box .bd-metacomments a,
+	.bdp_blog_template.box-template .bd-tags,
+	.bdp_blog_template .post-date {
+		font-size:14px;	}
+	.bdp_blog_template .date,
+	.bdp_blog_template .comment,
+	.bdp_blog_template .author .bd-icon-author,
+	.bdp_blog_template .author,
+	.bdp_blog_template.news .post-content-div .post_cat_tag > span i ,
+	.bdp_blog_template .post-by,
+	.bdp_blog_template .bd-categories i,
+	.bdp_blog_template .bd-metacats i,
+	.bdp_blog_template .bd-tags i,
+	.bdp_blog_template .bd-metacomments,
+	.bdp_blog_template .date_wrap i,
+	.bdp_blog_template .post-date,
+	.bdp_blog_template .tags i {
+		color:#999999;	}
+	.bdp_blog_template .bd-meta-data-box {
+		color:#999999;	}
+
+	.bdp_blog_template .bd-meta-data-box i {
+		color: #222222;	}
+
+			.bd-metadatabox {
+			color:#999999;		}
+		.bd-link-label {
+		color:#999999;	}
+
+	.bdp_blog_template a.bd-more-tag {
+		background-color: #2e93ea!important;;		color: #cecece!important;;	}
+
+			.bdp_blog_template a.bd-more-tag:hover {
+			background-color: #cecece!important;;			color: #2e93ea!important;;		}
+	
+	.bdp_blog_template i {
+		font-style: normal !important;
+	}
+			.bd-tags,
+		span.bd-category-link,
+		.bdp_blog_template .bd-categories,
+		.bd-meta-data-box .bd-metacats,
+		.bd-meta-data-box .bd-metacats a,
+		.bd-meta-data-box .bd-metacomments a,
+		.bdp_blog_template .bd-categories a,
+		.bd-post-content a,
+		.bd-tags a,
+		span.bd-category-link a,
+		.bdp_blog_template a {
+			color:#2a97ea !important;
+			font-weight: normal !important;
+		}
+	
+	
+		.bd-meta-data-box .bd-metacats a:hover,
+		.bd-meta-data-box .bd-metacomments a:hover,
+		.bdp_blog_template .bd-categories a:hover,
+		.spektrum .post-bottom .bd-categories a:hover,
+		.bd-post-content a:hover,
+		.bd-tags a:hover,
+		span.bd-category-link a:hover,
+		.bdp_blog_template a:hover,
+		.bd-post-content a:hover {
+			color:#999999 !important;
+		}
+	
+			.bdp_blog_template.evolution,
+		.bdp_blog_template.lightbreeze {
+			background: #ffffff;
+		}
+	
+	
+	/**
+	 * 4.0 - Classical Template
+	 */
+
+	.bdp_blog_template.classical .bd-blog-header .bd-tags {
+		color: #2a97ea;	}
+
+	/**
+	 * 5.0 - Light Breeze Template
+	 */
+
+	/**
+	 * 6.0 - Spektrum Template
+	 */
+
+	.bdp_blog_template.spektrum .bd-blog-header {
+		background:#ffffff;	}
+
+			.spektrum .date {
+			background-color: #222222;
+		}
+				.spektrum .post-bottom .bd-categories a {
+			color: #2a97ea;
+		}
+				.spektrum .details a {
+			color :#cecece !important;
+			font-size:14px;		}
+				.spektrum .details a:hover {
+			color :#2e93ea;
+		}
+	
+	/**
+	 * 7.0 - Evolution Template
+	 */
+
+
+	/**
+	 * 8.0 - Timeline Template
+	 */
+
+	.timeline_bg_wrap:before {
+		background: none repeat scroll 0 0 #ffffff;
+	}
+
+	.bd-datetime {
+		background: none repeat scroll 0 0 #ffffff;
+	}
+
+	.bdp_blog_template.timeline .post_hentry > p > i {
+		background: #ffffff;	}
+
+	.bdp_blog_template.timeline:nth-child(2n+1) .post_content_wrap:before,
+	.bdp_blog_template.timeline:nth-child(2n+1) .post_content_wrap:after {
+		border-left: 8px solid #ffffff;
+	}
+
+	.rtl .bdp_blog_template.timeline:nth-child(2n+1) .post_content_wrap:before,
+	.rtl .bdp_blog_template.timeline:nth-child(2n+1) .post_content_wrap:after {
+		border-right: 8px solid #ffffff;
+	}
+
+	.bdp_blog_template.timeline:nth-child(2n) .post_content_wrap:before,
+	.bdp_blog_template.timeline:nth-child(2n) .post_content_wrap:after {
+		border-right: 8px solid #ffffff;
+	}
+
+	.rtl .bdp_blog_template.timeline:nth-child(2n) .post_content_wrap:before,
+	.rtl .bdp_blog_template.timeline:nth-child(2n) .post_content_wrap:after {
+		border-left: 8px solid #ffffff;
+	}
+
+	.post_content_wrap {
+		border:1px solid #ffffff;
+	}
+
+	.bdp_blog_template .post_content_wrap .blog_footer {
+		border-top: 1px solid #ffffff ;
+	}
+
+	.bdp_blog_template .post-icon {
+		background:#ffffff;	}
+
+	.bdp_blog_template.timeline .desc h3 a{
+		color: #222222 !important;		background:#ffffff !important;		font-size: 35px;	}
+
+	/**
+	 * 9.0 - News Template
+	 */
+
+			.bdp_blog_template.news .bd-blog-header h2.title a{
+			color: #222222;			font-size: 35px;		}
+	
+	.bdp_blog_template.news .bd-blog-header h2.title{
+		background: #ffffff	}
+	.bdp_blog_template.news a.bd-more-tag{
+		float: right !important;
+	}
+	.blog_template.boxy-clean ul li:hover,
+	.blog_template.boxy-clean ul li:hover .blog_footer,
+	.blog_template.boxy-clean ul li:hover .blog_div,
+	.blog_template.boxy-clean ul li:hover .blog_header h2 {
+		background: ;
+	}
+	
+</style>
+</head>
+
+<body class="post-template-default single single-post postid-217 single-format-standard custom-background wp-embed-responsive tribe-no-js tribe-theme-twentyfifteen">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="index.html%3Fp=217.html#content">Skip to content</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+										<p class="site-title"><a href="index.html" rel="home">2019 Data Storytelling Studio @ MIT</a></p>
+										<button class="secondary-toggle">Menu and widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary">
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div class="menu-primary-nav-container"><ul id="menu-primary-nav" class="nav-menu"><li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="index.html">Home</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="https://docs.google.com/document/d/1L_JoxCGCZsMPyLGfCkhcxO5BcwvQnt1E79J7nvj7pBo/edit?usp=sharing">Syllabus (DRAFT)</a></li>
+</ul></div>			</nav><!-- .main-navigation -->
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				<aside id="text-2" class="widget widget_text">			<div class="textwidget"><p>This is the course website for the MIT Data Storytelling Studio course (Spring 2018 semester), taught by Rahul Bhargava.</p>
+<p><em>MAS.784, CMS.631, CMS.831</em></p>
+</div>
+		</aside><aside id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+				<li class="cat-item cat-item-12"><a href="category/charts-creative-charts/index.html">charts &amp; creative charts</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="category/data-games/index.html">data games</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="category/data-log/index.html">data log</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="category/data-sculptures/index.html">data sculptures</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="category/final-projects/index.html">final projects</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="category/maps-creative-maps/index.html">maps &amp; creative maps</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="category/meta/index.html">meta</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="category/viz-reviews/index.html">viz reviews</a>
+</li>
+		</ul>
+			</aside><aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="index.html">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit screen-reader-text" value="Search" />
+			</form></aside><aside id="meta-2" class="widget widget_meta"><h2 class="widget-title">Meta</h2>			<ul>
+						<li><a href="wp-login.php.html">Log in</a></li>
+			<li><a href="feed/index.html">Entries feed</a></li>
+			<li><a href="comments/feed/index.html">Comments feed</a></li>
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>			</ul>
+			</aside>			</div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-217" class="post-217 post type-post status-publish format-standard hentry category-charts-creative-charts">
+	
+	<header class="entry-header">
+		<h1 class="entry-title">How Much Food Is In Our Trash</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>&nbsp;</p>
+<p><img class="alignnone  wp-image-218" src="wp-content/uploads/sites/31/2019/03/Screen-Shot-2019-03-08-at-12.19.38-PM-300x207.png" alt="" width="665" height="459" srcset="wp-content/uploads/sites/31/2019/03/Screen-Shot-2019-03-08-at-12.19.38-PM-300x207.png 300w, wp-content/uploads/sites/31/2019/03/Screen-Shot-2019-03-08-at-12.19.38-PM-768x531.png 768w, wp-content/uploads/sites/31/2019/03/Screen-Shot-2019-03-08-at-12.19.38-PM-1024x708.png 1024w, wp-content/uploads/sites/31/2019/03/Screen-Shot-2019-03-08-at-12.19.38-PM.png 1043w" sizes="(max-width: 665px) 100vw, 665px" /></p>
+<p>The data say that the US wastes a LOT of food. We want to tell this story because most of people do not aware the food waste problem. Through a playful data storytelling, we aim to help older elementary school students to better understand the problem of food waste and value of food saving using an interactive classroom activity.</p>
+<p>DATA SOURCES: food wasted from EPA. food/person/yr from EPA. Food weights from quick google.</p>
+<p><strong>How does the game work</strong></p>
+<p>Students in the interactive classroom settings will be asked to volunteer. First, a student need to drag an apple from the trash to the compost to get started. The design concept of this action was to engage student with a mindset of food composting. After “composting” the apple, students will see a big number of “132.9 Billion” pounds of food wasted each year in the US, which counts 31% of total US produced food each year. A pie chart which demonstrates the percentage will give students a more intuitive understanding of this food waste problem.</p>
+<p>Our goal of this data storytelling is more than just publishing numbers. Students can click “what can I do to help” to further explore how their actions of food saving can contribute to reducing food waste. Furthermore, we designed a “what is your favourite food” session and translated the abstract number concept to food cartoons. Students can select their favourite food and check the amount of their favourite food, equivalently, would be wasted if people do not take actions in food saving.</p>
+<p><strong>Design Ethos</strong></p>
+<p>Before starting the narratives design, we as a group spent time discussing how to better engage students of young ages. Specifically, we wanted to lower the barrier of conceptual understanding of data for children, and design activities that allow more students to engage in an interactive classroom setting. To be able to achieve the goal, we used analog of different children-loved foods, big pie charts, and cartoons to intrigue the interests and curiosity of students.</p>
+<p><strong>What can be done more?</strong></p>
+<p>Due to time constraints, we were not able to iterate our design. Many of details would be better attended of if there were more time. For example, the contrasts of years and days may lead to confusions for students if they do not pay attention to read line by line. We would also like to iterate the interaction design between each actions to make the storytelling more cohesive and compelling.</p>
+<p>&nbsp;</p>
+<p>Julie Ganeshan, Sarah Von Ahn, Berlynn Bai</p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="index.html%3Fp=217.html" rel="bookmark"><time class="entry-date published updated" datetime="2019-03-08T17:20:52+00:00">March 8, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Author </span><a class="url fn n" href="author/berlynnbai/index.html">berlynnbai</a></span></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="category/charts-creative-charts/index.html" rel="category tag">charts &amp; creative charts</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-217 -->
+
+	<nav class="navigation post-navigation" role="navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="index.html%3Fp=209.html" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">Common causes of colony collapse for hobbyists</span></a></div><div class="nav-next"><a href="index.html%3Fp=235.html" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Where is Your Water From?</span></a></div></div>
+	</nav>
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+<script type='text/javascript'>
+var colomatduration = 'fast';
+var colomatslideEffect = 'slideFade';
+var colomatpauseInit = '';
+var colomattouchstart = '';
+</script>		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script type='text/javascript' src='wp-content/plugins/blog-designer/js/designer.js%3Fver=5.3.2'></script>
+<script type='text/javascript' src='wp-content/plugins/jquery-collapse-o-matic/js/collapse.js%3Fver=1.6.18'></script>
+<script type='text/javascript' src='wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js%3Fver=20141010'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/twentyfifteen/js/functions.js%3Fver=20150330'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tve_dash_front = {"ajaxurl":"https:\/\/datastudio2019.datatherapy.org\/wp-admin\/admin-ajax.php","force_ajax_send":"","is_crawler":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/thrive-visual-editor/thrive-dashboard/js/dist/frontend.min.js%3Fver=2.2.6.2'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.min.js%3Fver=5.3.2'></script>
+<script type="text/javascript">var tcb_post_lists=JSON.parse('[]');</script>
+</body>
+</html>
